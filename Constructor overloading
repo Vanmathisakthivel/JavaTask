@@ -1,0 +1,24 @@
+package com.java;
+class Emp
+{
+Emp() 
+{
+	System.out.println("Employee Details:");
+}
+Emp(String name)
+{
+	System.out.println("Employee name:" +name);
+}
+Emp(String CompanyName, int ID)
+{
+	System.out.println("Company Name:" +CompanyName);
+	System.out.println("Employee ID:"+ ID);
+}
+}
+public class Employee
+{public static void main(String[] args) {
+		Emp e = new Emp();
+		Emp e2 = new Emp("Vanmathi");
+		Emp e3 = new Emp("Codoid",1345);
+	}	
+}
