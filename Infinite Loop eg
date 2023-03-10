@@ -1,0 +1,13 @@
+import java.util.*;  
+import java.lang.*;  
+class InfiniteLoopEg  
+{    
+    public static void main(String args[])  
+    {  
+        do  
+        {  
+         System.out.print("Codoid");  
+         System.out.print(" ");  
+        }while(true);  
+    }  
+}
