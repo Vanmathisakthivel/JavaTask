@@ -1,25 +1,65 @@
-class Bank{
-int getRateOfInterest(){return 0;}
+
+class Parent {
+
+    public  void m1()
+
+    {
+
+        System.out.println("do you like tea");
+
+    }
+
+  
+
+    public   void m2()
+
+    {
+
+        System.out.println("I like chocolates ");
+
+    }
+
 }
 
-class SBI extends Bank{
-int getRateOfInterest(){return 8;}
+  
+
+class Child extends Parent {
+
+ 
+ public    void m1()
+
+    {
+
+        System.out.println("No! I like cofee");
+
+    }
+
+    @Override
+
+    public void m2()
+
+    {
+
+        System.out.println("i like ice-cream");
+
+    }
+
 }
 
-class ICICI extends Bank{
-int getRateOfInterest(){return 7;}
-}
-class AXIS extends Bank{
-int getRateOfInterest(){return 9;}
-}
+class Main {
 
-class Test2{
-public static void main(String args[]){
-SBI s=new SBI();
-ICICI i=new ICICI();
-AXIS a=new AXIS();
-System.out.println("SBI Rate of Interest: "+s.getRateOfInterest());
-System.out.println("ICICI Rate of Interest: "+i.getRateOfInterest());
-System.out.println("AXIS Rate of Interest: "+a.getRateOfInterest());
-}
-}
+    public static void main(String[] args)
+
+    {
+
+        Parent obj1 = new Child();
+
+  
+
+        obj1.m1();
+
+  
+
+        obj1.m2();
+
+    }
