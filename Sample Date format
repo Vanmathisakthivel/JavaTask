@@ -1,9 +1,13 @@
-import java.text.SimpleDateFormat;  
-import java.util.Date;  
-public class StringToDateExample1 {  
-public static void main(String[] args)throws Exception {  
-    String sDate1="31/12/1998";  
-    Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);  
-    System.out.println(sDate1+"\t"+date1);  
-}  
-}
+import java.time.LocalDateTime;     
+java.time.format.DateTimeFormatter; 
+ public class sampleDateFormate { 
+public static void main(String[] args) {
+
+ LocalDateTime date = LocalDateTime.now();
+
+ System.out.println(date); 
+
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+ System.out.println(dtf.format(date));
+ }
+ }
